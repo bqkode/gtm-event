@@ -1,0 +1,28 @@
+{
+  "name": "gtm-event",
+  "version": "0.0.1",
+  "description": "GTM event helper for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bquentink/gtm-event.git"
+  },
+  "keywords": [
+    "gtm",
+    "event",
+    "tracking",
+    "virtual",
+    "pageview"
+  ],
+  "author": "Bjørn Quentin Kvamme",
+  "license": "WTFPL",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "mocha-jsdom": "^1.1.0"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "gtm-event",
-  "version": "0.0.4",
+  "version": "0.0.9",
   "description": "GTM event helper for node",
   "main": "index.js",
   "scripts": {

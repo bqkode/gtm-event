@@ -1,6 +1,6 @@
 {
   "name": "gtm-event",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "GTM event helper for node",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "virtual",
     "pageview"
   ],
+  "tonicExample": "var GTM = require('gtm-event');\n\nGTM.Event('required category', 'required action', 'optional label and value ->', 123);\nGTM.virtualPageview('/my/virtual/path');",
   "author": "Bjørn Quentin Kvamme",
   "license": "WTFPL",
   "devDependencies": {

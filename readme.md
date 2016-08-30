@@ -9,6 +9,9 @@ It could also work as a recipe for those who are not that familiar with GTM.
 #### Installation
 `npm install gtm-event`
 
+#### Note
+Since v0.1.1 the GTM.Event is called GTM.event to please some linters.
+
 
 #### Usage
 ```javascript
@@ -16,10 +19,10 @@ It could also work as a recipe for those who are not that familiar with GTM.
 var GTM = require('gtm-event');
 
 // Or for Meteor
-import GTM, {Event, virtualPageview} from 'gtm-event';
+import GTM, {event, virtualPageview} from 'gtm-event';
 
 // Track event
-GTM.Event('category'(req), 'action'(req), 'label'(opt), value(opt);
+GTM.event('category'(req), 'action'(req), 'label'(opt), value(opt);
 
 // Virtual pageview tracking
 GTM.virtualPageview('/my/virtual/path');
@@ -50,4 +53,4 @@ Publish the changes to GTM, and your Google Analytics account should be reportin
 
 
 ####Running tests
-`npm test`
+`npm run test`

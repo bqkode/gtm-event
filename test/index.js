@@ -10,35 +10,35 @@ describe("Event", function() {
     jsdom();
 
     it("Fails when Category is undefined", function() {
-        expect( GTM.Event() ).to.equal(false);
+        expect( GTM.event() ).to.equal(false);
     });
 
     it("Fails when Action is undefined", function() {
-        expect( GTM.Event('category') ).to.equal(false);
+        expect( GTM.event('category') ).to.equal(false);
     });
 
     it("Succeed when Category and Action is defined", function() {
-        expect( GTM.Event('category', 'action') ).to.equal(true);
+        expect( GTM.event('category', 'action') ).to.equal(true);
     });
 
     it("Fail when category is number", function() {
-        expect( GTM.Event(123, 'action', 'label', 0) ).to.equal(false);
+        expect( GTM.event(123, 'action', 'label', 0) ).to.equal(false);
     });
 
     it("Fail when action is number", function() {
-        expect( GTM.Event('category', 123, 'label', 0) ).to.equal(false);
+        expect( GTM.event('category', 123, 'label', 0) ).to.equal(false);
     });
 
     it("Fail when label is number", function() {
-        expect( GTM.Event('category', 'action', 123, 0) ).to.equal(false);
+        expect( GTM.event('category', 'action', 123, 0) ).to.equal(false);
     });
 
     it("Fail when value is string", function() {
-        expect( GTM.Event('category', 'action', 'label', '123') ).to.equal(false);
+        expect( GTM.event('category', 'action', 'label', '123') ).to.equal(false);
     });
 
     it("Succeed when all params are defined", function() {
-        expect( GTM.Event('category', 'action', 'label', 0) ).to.equal(true);
+        expect( GTM.event('category', 'action', 'label', 0) ).to.equal(true);
     });
 });
 
